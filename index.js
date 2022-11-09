@@ -1,6 +1,6 @@
 const GBP = 1.14; // setting EUR to GBP exchange rate
 const EUR = 0.88; // setting GBP to EUR exchange rate
-var wantRestart;
+
 function converter() {
   alert ("Currency converter \n");
   alert ("Menu:");
@@ -30,9 +30,9 @@ function converter() {
     default:
       alert("Please enter numeber from 1 to 3 and hit ENTER!"); // if the number input is other that 1,2 or 3 then display this
       break;
-  }
-  
+  }  
 }
+
 function reset() {
     var wantRestart = prompt("Want to try again? (y/n) ")
     switch (wantRestart) {
@@ -48,6 +48,7 @@ function reset() {
         reset();
     }
 }
+
 function restart() {
   converter();
 }
